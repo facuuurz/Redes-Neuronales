@@ -41,4 +41,7 @@ print(f"  X_train: {X_train.shape}, X_val: {X_val.shape}, X_test: {X_test.shape}
 
 with open("data.pkl", "wb") as f:
     pickle.dump((X_train, y_train, X_val, y_val, X_test, y_test), f)
-print("\nGuardado en data.pkl")
+# El vectorizador se guarda aparte para poder clasificar texto nuevo (06_probar.py)
+with open("vectorizador.pkl", "wb") as f:
+    pickle.dump(vec, f)
+print("\nGuardado en data.pkl y vectorizador.pkl")
