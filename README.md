@@ -14,7 +14,7 @@ pip install tensorflow-cpu datasets scikit-learn matplotlib pandas
 
 | Script | Punto del TP | Salida |
 |---|---|---|
-| `01_dataset.py` | 2 — Dataset de Hugging Face | `data.pkl` (TF-IDF, 10k features) |
+| `01_dataset.py` | 2 — Dataset de Hugging Face | `data.pkl` (TF-IDF, 10k features), `vectorizador.pkl` |
 | `02_modelo_base.py` | 3 — Red neuronal (Keras Sequential) | `modelo_base.keras`, `fig_modelo_base.png` |
 | `03_overfitting.py` | 4 — Simular overfitting | `fig_overfitting.png` |
 | `04_experimentos.py` | 5 — 4 experimentos de hiperparámetros | `experimentos.csv`, `fig_experimentos.png` |
@@ -27,6 +27,26 @@ python 03_overfitting.py
 python 04_experimentos.py
 python 05_evaluacion.py
 ```
+
+> `data.pkl` (407 MB) no está en el repo: se regenera corriendo `01_dataset.py`.
+
+## Probar el modelo con texto propio
+
+```
+python 06_probar.py
+```
+
+Demo interactiva (no es parte de la consigna): escribís una reseña de película
+**en inglés** y el modelo responde POSITIVA o NEGATIVA con su confianza.
+Requiere haber corrido antes `01_dataset.py` y `02_modelo_base.py`
+(el modelo entrenado `modelo_base.keras` ya está incluido en el repo).
+
+## Resultados
+
+Los números, tablas y observaciones de todos los experimentos están
+organizados por punto de la consigna en [`RESULTADOS.md`](RESULTADOS.md).
+Resumen: el modelo base logra **78,05% de accuracy** sobre test (dataset
+balanceado 50/50, azar = 50%).
 
 ## Diseño
 
