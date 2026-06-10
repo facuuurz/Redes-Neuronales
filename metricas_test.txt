@@ -1,0 +1,7 @@
+accuracy=0.7805
+precision=0.7837
+recall=0.7749
+f1=0.7792
+matriz_confusion=
+[[419 114]
+ [120 413]]

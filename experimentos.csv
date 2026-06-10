@@ -1,0 +1,13 @@
+experimento,valor,val_accuracy,val_loss,train_accuracy,mejor_epoca,gap_train_val,es_config_base
+learning_rate,0.0001,0.7561,0.4944,0.9069,14,0.1508,False
+learning_rate,0.001,0.7448,0.505,0.8019,2,0.057,True
+learning_rate,0.01,0.7523,0.5009,0.6778,1,-0.0745,False
+capas_ocultas,"(16, 8)",0.7505,0.5007,0.8334,4,0.0829,False
+capas_ocultas,"(64, 32)",0.7542,0.4991,0.7893,2,0.0351,True
+capas_ocultas,"(256, 128)",0.743,0.5164,0.663,1,-0.08,False
+dropout,0.0,0.7523,0.5048,0.6903,1,-0.0621,False
+dropout,0.3,0.7561,0.5128,0.827,2,0.0709,False
+dropout,0.5,0.7533,0.5024,0.8041,2,0.0508,True
+batch_size,16,0.7486,0.5125,0.6611,1,-0.0875,False
+batch_size,64,0.7458,0.5039,0.7938,2,0.048,True
+batch_size,256,0.7552,0.4983,0.8769,4,0.1217,False
