@@ -39,7 +39,7 @@ python 05_evaluacion.py
 - **Experimentos**: learning rate, tamaño de capas, dropout y batch size,
   variando uno a la vez sobre la config base.
 - **Métrica**: el dataset está balanceado → accuracy es adecuada; se reporta
-  también F1, precision y recall.
+  también F1, precision y recall .
 
 > Nota: el informe PDF (máx. 5 páginas) debe redactarse a mano — la consigna
 > prohíbe usar IA para escribir el informe.
